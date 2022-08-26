@@ -1,0 +1,27 @@
+//Add your mixin to these rules
+
+.wrapper {
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  position: relative;
+  margin: 0 auto;
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+
+    &--red {
+      background-color: red;
+    }
+
+    &--green {
+      background-color: green;
+    }
+
+    &--orange {
+      background-color: orange;
+    }
+  }
+}
