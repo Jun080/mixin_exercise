@@ -14,14 +14,17 @@
 
     &--red {
       background-color: red;
+      @include center-in-absolute($y: false);
     }
 
     &--green {
       background-color: green;
+      @include center-in-absolute($x: false);
     }
 
     &--orange {
       background-color: orange;
+      @include center-in-absolute();
     }
   }
 }
