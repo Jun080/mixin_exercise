@@ -1,1 +1,14 @@
-//write the mixin here
+@mixin center-in-absolute($x: true, $y: true) {
+  position: absolute;
+
+  @if ($x and $y) {
+    top: 50%;
+    left: 50%;
+
+  } @else if ($x) {
+    top: 50%; 
+
+  } @else if ($y) {
+    left: 50%;
+  }
+}
